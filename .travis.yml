@@ -9,7 +9,6 @@ branches:
 cache:
   directories:
     - '$HOME/.m2/repository'
-    - '$HOME/.mvnw'
 
 script: "./mvnw clean package"
 

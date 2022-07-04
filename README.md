@@ -4,7 +4,6 @@ travis를 이용해 지속적인 통합과 자동 배포를 구현했습니다.
 
 
 ## CI에 관해서
-<img width="1245" alt="스크린샷 2022-07-05 오전 1 34 45" src="https://user-images.githubusercontent.com/92219795/177193116-827c69ad-57d7-4d9f-bd79-72b56d292db6.png">
 
 CI(Continuous Integration)는 지속적 통합이라 하여 코드 버전 관리 시스템에서 PUSH가 되면 자동으로 테스트와 빌드가 수행되는 안정적인 배포 파일을 만드는 과정이다. 
 

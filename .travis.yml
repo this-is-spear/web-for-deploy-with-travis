@@ -2,6 +2,13 @@ language: java
 jdk:
   - openjdk11
 
+install:
+  - mvn -N io.takari:maven:wrapper
+  - ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+
+before_install:
+  - chmod +x mvnw
+
 branches:
   only:
     - main
@@ -15,5 +22,3 @@ notifications:
     recipients:
       - rjsckdd12@gmail.com
 
-before_install:
-  - chmod +x mvnw

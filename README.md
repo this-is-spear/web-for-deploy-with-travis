@@ -1,10 +1,10 @@
 # web-for-deploy
-[![Build Status](https://app.travis-ci.com/this-is-spear/web-for-deploy.svg?branch=main)](https://app.travis-ci.com/this-is-spear/web-for-deploy)
 
 travis를 이용해 지속적인 통합과 자동 배포를 구현했습니다.
 
 
 ## CI에 관해서
+<img width="1245" alt="스크린샷 2022-07-05 오전 1 34 45" src="https://user-images.githubusercontent.com/92219795/177193116-827c69ad-57d7-4d9f-bd79-72b56d292db6.png">
 
 CI(Continuous Integration)는 지속적 통합이라 하여 코드 버전 관리 시스템에서 PUSH가 되면 자동으로 테스트와 빌드가 수행되는 안정적인 배포 파일을 만드는 과정이다. 
 
@@ -24,7 +24,8 @@ language: java
 jdk:
   - openjdk11
 
-branches:
+branches:<img width="1728" alt="스크린샷 2022-07-05 오전 1 37 01" src="https://user-images.githubusercontent.com/92219795/177193333-fc8b7721-72d7-4a54-bf0c-8c2badf4f80e.png">
+
   only:
     - main
 
@@ -40,9 +41,33 @@ notifications:
 
 ### Travis에서 repo 마저 설정
 
-1. 등록된 repo에서 Status Image를 설정한다.
-2. 원하는 방식을 선택해 해당 main 브랜치 readme 파일에 등록한다.
-3. travis에 있는 Dashboard에서 `Trigger a build` 버튼을 누른다.
+설정하려는 repo를 들어가면 아래 그림처럼 나온다.
+<img width="1050" alt="스크린샷 2022-07-05 오전 1 29 55" src="https://user-images.githubusercontent.com/92219795/177192604-b23ca94a-9c08-4dc8-adb4-7953e7978689.png">
+
+**등록된 repo에서 Status Image를 설정한다.**
+
+repo 이름 오른쪽에 보면 아래 버튼이 있는데 클릭해서. Status Image를 설정한다.
+
+<img width="115" alt="스크린샷 2022-07-05 오전 1 30 30" src="https://user-images.githubusercontent.com/92219795/177192673-3fbb481c-4d84-4af8-bd5f-8fd24e349e00.png">
+
+
+Format을 설정할 수 있는데, Image, Markdown 등 많은 포멧을 제공하고 있으니 필요한 것을 복사한다.
+
+<img width="1120" alt="스크린샷 2022-07-05 오전 1 30 47" src="https://user-images.githubusercontent.com/92219795/177192705-36286447-b1ad-4749-8343-ef1e2a91a16e.png">
+
+**원하는 방식을 선택해 해당 main 브랜치 readme 파일에 등록한다.**
+ 
+복사한 내용을 readme 파일에 등록한다. **꼭 설정한 브랜치 readme 파일에 작성해야 한다.**
+
+<img width="1728" alt="스크린샷 2022-07-05 오전 1 38 13" src="https://user-images.githubusercontent.com/92219795/177193465-bef8bb20-b9d4-4996-a507-350c3d794897.png">
+
+**travis에 있는 Dashboard에서 `Trigger a build` 버튼을 누른다.**
+
+<img width="1728" alt="스크린샷 2022-07-05 오전 1 37 24" src="https://user-images.githubusercontent.com/92219795/177193374-33894319-b6bc-4659-b6ad-2060a9ce5f98.png">
+
+<img width="1010" alt="스크린샷 2022-07-05 오전 1 35 44" src="https://user-images.githubusercontent.com/92219795/177193220-040c0eb7-ca8b-419a-bc00-d7d4b9119046.png">
+
+
 
 ## 오류 상황
 
@@ -83,6 +108,7 @@ notifications:
     recipients:
       - rjsckdd12@gmail.com
 ```
+
 
 ## 마치면서
 
